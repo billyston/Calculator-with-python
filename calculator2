@@ -1,0 +1,34 @@
+userChoice = "Yes"
+
+def calSum() :
+    num1 = int( input( "Enter first number: " ) )
+    operation = input( "Enter: +, *, - or /: " )
+    num2 = int( input( "Enter second number: " ) )
+
+    if operation == "+" :
+        return num1 + num2
+    
+    elif operation == "*" :
+        return num1 * num2
+
+    elif operation == "-" :
+        return num1 - num2
+
+    elif operation == "/" :
+        return num1 / num2
+
+    else :
+        return "Invalid operator entered"
+
+
+while userChoice == "Yes" :
+    
+    if userChoice == "Yes" :
+        print( calSum() )
+
+        userChoice = input("Want to continue?... ")
+    
+    else :
+        exit()
+
+print( "Thank you for using the calculator" )
